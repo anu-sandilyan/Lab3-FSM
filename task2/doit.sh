@@ -1,6 +1,6 @@
-rm -rf obj_dir_task2
+rm -rf obj_dir
 rm -f f1_fsm.vcd
 
-verilator -Wall --cc --trace f1_fsm.sv --exe f1_fsm.cpp
-make -j -C obj_dir_task2/ -f Vf1_fsm.mk Vf1_fsm
-obj_dir_task2/Vf1_fsm
+verilator -Wall --cc --trace f1_fsm.sv --exe f1_fsm_tb.cpp
+make -j -C obj_dir/ -f Vf1_fsm.mk Vf1_fsm
+obj_dir/Vf1_fsm

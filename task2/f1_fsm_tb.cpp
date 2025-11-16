@@ -24,7 +24,7 @@ top->clk = 1;
 top->rst = 1;
 top->en = 0;
 
-for (i=0; i < 100; i++){
+for (i=0; i < 5000; i++){
     //dump variables into VCD file and toggle clock
     for (clk=0; clk < 2; clk++){
         tfp->dump(2*i + clk);
